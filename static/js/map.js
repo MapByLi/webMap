@@ -144,5 +144,15 @@ function show_table(){
         }]
     };
     myChart.setOption(option)
+}
 
+/**
+ * 数据最大值，最小值，当前数据，最深色，最浅色
+ * */
+function range(max, min, val, col1, col2) {
+    let valRange = +((val - min) / (max - min)).toFixed(2);
+    let [r1,g1,b1]=col1,
+        [r2,g2,b2]=col2;
+    let [r3,g3,b3]=[(r2 - (r2 - r1) * valRange), (g2 - (g2 - g1) * valRange), (b2 - (b2 - b1) * valRange )];
+    return [r3, g3, b3];
 }
