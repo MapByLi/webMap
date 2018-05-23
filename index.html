@@ -51,7 +51,7 @@
     </div>
     <div id="button_right" class="btn-group " role="group" aria-label="...">
         <button type="button" class="btn btn-default" onclick="show_table()">按钮1</button>
-        <button type="button" class="btn btn-default">按钮2</button>
+        <button type="button" class="btn btn-default" onclick="addEffectScatter(data,geoCoordMap)">按钮2</button>
         <button type="button" class="btn btn-default">按钮3</button>
     </div>
     <div class="table_container" id="main_echarts"></div>
@@ -65,8 +65,8 @@
             <div class="events-wrapper">
                 <div class="events">
                     <ol>
-                        <li><a href="#0" data-date="16/01/2014" class="selected" onclick="test1()">16 Jan</a></li>
-                        <li><a href="#0" data-date="28/02/2014" onclick="test2()">28 Feb</a></li>
+                        <li><a href="#0" data-date="16/01/2014" class="selected">16 Jan</a></li>
+                        <li><a href="#0" data-date="28/02/2014">28 Feb</a></li>
                         <!-- other dates here -->
                     </ol>
                     <span class="filling-line" aria-hidden="true"></span>

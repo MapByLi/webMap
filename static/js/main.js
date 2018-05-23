@@ -4,11 +4,12 @@
 
 var myChart;
 var bm;
+var option;
 
 //初始化地图echarts，添加点击下钻返回事件
 $(function () {
     myChart=echarts.init(document.getElementById('baidu_map'));
-    var option={
+    option={
         bmap:{
             center:[110.404, 35.915],
             zoom:5,
