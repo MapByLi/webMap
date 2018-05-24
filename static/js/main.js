@@ -2,10 +2,9 @@
  * Created by lyh on 2018/5/21.
  */
 
-var myChart;
-var bm;
-var option;
-
+let myChart=null;
+let bm=null;
+let option=null;
 //初始化地图echarts，添加点击下钻返回事件
 $(function () {
     myChart=echarts.init(document.getElementById('baidu_map'));
@@ -166,10 +165,11 @@ $(function () {
                     }]
             }
         }
-    }
+    };
     myChart.setOption(option);
     bm=myChart.getModel().getComponent('bmap').getBMap();
     bm.addEventListener("click",drill);
     bm.addEventListener("rightclick",upper);
-})
+    console.log(bm)
+});
 

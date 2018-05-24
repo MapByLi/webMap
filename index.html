@@ -4,16 +4,27 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style type="text/css">
-        html{height:100%}
-        body{height:100%;margin:0px;padding:0px}
-        #baidu_map{height: 100%}
+        html {
+            height: 100%
+        }
+
+        body {
+            height: 100%;
+            margin: 0px;
+            padding: 0px
+        }
+
+        #baidu_map {
+            height: 100%
+        }
     </style>
 
     <link rel="stylesheet" href="lib/horizontal-timeline-master/css/reset.css">
     <link rel="stylesheet" href="lib/horizontal-timeline-master/css/style.css">
     <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.css">
     <link rel="stylesheet" href="static/css/map.css">
-    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=s5op0rBri8h6EBYCYoEREAZ3OQRrMKME"></script>
+    <script type="text/javascript"
+            src="http://api.map.baidu.com/api?v=2.0&ak=s5op0rBri8h6EBYCYoEREAZ3OQRrMKME"></script>
     <script src="lib/echarts.js"></script>
     <script src="lib/bmap.js"></script>
 
@@ -22,11 +33,14 @@
 <body>
 
 <div class="page-header">
-    <h4>数据地图 <small>beiyou.charts</small></h4>
+    <h4>数据地图
+        <small>beiyou.charts</small>
+    </h4>
 </div>
 <div class="container">
     <div id="index_one" class="dropdown col-md-3">
-        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="true">
             一级指标
             <span class="caret"></span>
         </button>
@@ -38,7 +52,8 @@
         </ul>
     </div>
     <div id="index_two" class="dropdown col-md-3">
-        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="true">
             二级指标
             <span class="caret"></span>
         </button>
@@ -55,7 +70,6 @@
         <button type="button" class="btn btn-default">按钮3</button>
     </div>
     <div class="table_container" id="main_echarts"></div>
-
 
 
 </div>

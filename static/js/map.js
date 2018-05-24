@@ -10,6 +10,8 @@ var flag=0;//计数器
 //点击下钻，右键返回
 //下钻回调函数
 function drill(e) {
+    console.log(bm)
+
     if((0<=flag)&&(flag<3)){
         var point=e.point;
         var coder=new BMap.Geocoder();
@@ -617,5 +619,4 @@ function addEffectScatter(data,geoCoord) {
     ]
     console.log(option)
     myChart.setOption(option);
-
 }
