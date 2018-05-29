@@ -35,3 +35,36 @@
     padding-top:45%;
     padding-left: 25%
 }
+.timeline{
+    overflow: visible;
+}
+.events-wrapper{
+    overflow: visible;
+}
+.timeline-btn{
+    z-index: 3;
+    margin-left:50%;
+    margin-top:5%;
+    position: relative;
+    align-items: center;
+    justify-items: center;
+    overflow: hidden;
+    background-color: #7b9d6f;
+
+}
+.particles {
+    position: relative;
+    grid-area: 1 / 1 / 2 / 2;
+    overflow: visible;
+}
+
+.particles-canvas {
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    left:30%;
+    transform: translate3d(-50%,-50%,0);
+    z-index: 1;
+    overflow: visible;
+
+}

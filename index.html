@@ -67,7 +67,7 @@
     <div id="button_right" class="btn-group " role="group" aria-label="...">
         <button type="button" class="btn btn-default" onclick="show_table()">按钮1</button>
         <button type="button" class="btn btn-default" onclick="addEffectScatter(data,geoCoordMap)">按钮2</button>
-        <button type="button" class="btn btn-default">按钮3</button>
+        <button type="button" class="btn btn-default" onclick="openHeatmap(points)">按钮3</button>
     </div>
     <div class="table_container" id="main_echarts"></div>
 
@@ -85,6 +85,7 @@
                     </ol>
                     <span class="filling-line" aria-hidden="true"></span>
                 </div>
+                <button type="button" class="btn btn-default timeline-btn" onclick="buttonAnimation()">合并时间轴</button>
             </div>
         </div>
     </section>
@@ -93,9 +94,12 @@
 
 <script src="lib/jquery3.3.1/jquery3.3.1.js"></script>
 <script src="lib/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script src="lib/heatmap.min.js"></script>
 <script type="text/javascript" src="static/js/main.js"></script>
 <script type="text/javascript" src="static/js/map.js"></script>
 <script src="lib/horizontal-timeline-master/js/main.js"></script>
+<script src="lib/buttonDisappear/anime.min.js"></script>
+<script src="lib/buttonDisappear/particles.js"></script>
 
 </body>
 </html>

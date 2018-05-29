@@ -55,7 +55,7 @@ Main Components
   position: relative;
   height: 100%;
   margin: 0 40px;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 .cd-horizontal-timeline .events-wrapper::after, .cd-horizontal-timeline .events-wrapper::before {
   /* these are used to create a shadow effect at the sides of the timeline */
